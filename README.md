@@ -10,33 +10,67 @@ Cette documentation couvre tous les aspects de l'application **Starter App**, un
 
 | Document | Description | Fichier |
 |----------|-------------|---------|
-| **Architecture** | Vue d'ensemble technique et structure du projet | [`architecture_doc.md`](./architecture_doc.md) |
-| **Authentification** | Système d'auth avec NextAuth.js et sécurité | [`auth_doc.md`](./auth_doc.md) |
-| **Dashboard** | Interface utilisateur et composants | [`dashboard_doc.md`](./dashboard_doc.md) |
-| **Base de données** | Configuration Prisma et PostgreSQL | [`database_doc.md`](./database_doc.md) |
-| **API Routes** | Endpoints et configuration des API | [`api_doc.md`](./api_doc.md) |
-| **Page d'accueil** | Landing page et navigation | [`landing_doc.md`](./landing_doc.md) |
-| **Composants UI** | Composants React et design system | [`components_doc.md`](./components_doc.md) |
-| **Déploiement** | Configuration et déploiement en production | [`deployment_doc.md`](./deployment_doc.md) |
+| **Architecture** | Vue d'ensemble technique et structure du projet | [`architecture_doc.md`](./Documentation/architecture_doc.md) |
+| **Authentification** | Système d'auth avec NextAuth.js et sécurité | [`auth_doc.md`](./Documentation/auth_doc.md) |
+| **Dashboard** | Interface utilisateur et composants | [`dashboard_doc.md`](./Documentation/dashboard_doc.md) |
+| **Base de données** | Configuration Prisma et PostgreSQL | [`database_doc.md`](./Documentation/database_doc.md) |
+| **API Routes** | Endpoints et configuration des API | [`api_doc.md`](./Documentation/api_doc.md) |
+| **Page d'accueil** | Landing page et navigation | [`landing_doc.md`](./Documentation/landing_doc.md) |
+| **Composants UI** | Composants React et design system | [`components_doc.md`](./Documentation/components_doc.md) |
+| **Déploiement** | Configuration et déploiement en production | [`deployment_doc.md`](./Documentation/deployment_doc.md) |
 
 ## 🚀 Démarrage rapide
+
+### 🎯 Optimisé pour Netlify
+Cette application est **optimisée par défaut pour Netlify** avec une configuration prête à l'emploi :
+- ✅ **Configuration Netlify** incluse (`netlify.toml`)
+- ✅ **Build automatique** et déploiement continu
+- ✅ **Variables d'environnement** configurées
+- ✅ **Redirection des routes** optimisée
 
 ### Prérequis
 - **Node.js** 18+ 
 - **pnpm** (gestionnaire de paquets)
 - **PostgreSQL** (base de données)
-
-### Installation
 ```bash
 # Cloner le projet
 git clone https://github.com/anthonymarandon/Next-start-app.git
 cd Next-start-app
 
-# Installer les dépendances
+# Installer les dépendances (pnpm recommandé)
 pnpm install
+# ou npm install
+# ou yarn install
 
-# Démarrage
+# Initialiser et construire l'application
+pnpm build
+
+# Démarrer le serveur de développement
 pnpm dev
+```
+
+### 🚀 Démarrage rapide après installation
+
+Une fois l'installation terminée :
+
+1. **Initialisation** : `pnpm build` - Construit l'application et initialise tous les composants
+2. **Développement** : `pnpm dev` - Lance le serveur de développement sur http://localhost:3000
+3. **Modification** : Modifiez les fichiers dans `app/` et `src/` pour personnaliser votre application
+4. **Enjoy** : Votre application est prête à être développée ! 🎉
+
+## 🚀 Déploiement
+
+### Options recommandées
+1. **Netlify** ⭐ **RECOMMANDÉ** - Optimisé par défaut avec configuration incluse
+2. **Vercel** - Déploiement automatique depuis GitHub
+3. **Docker** - Pour des environnements personnalisés
+4. **AWS** - Pour des besoins d'entreprise
+
+### Déploiement Netlify (Recommandé)
+```bash
+# Connectez votre repository GitHub à Netlify
+# La configuration netlify.toml est déjà incluse
+# Déploiement automatique à chaque push !
 ```
 
 ## 🏗️ Architecture technique
@@ -90,22 +124,6 @@ starter-app/
 - ✅ **Gestion d'erreurs** complète
 - ✅ **Sécurité CSRF** intégrée
 
-## 🛠️ Scripts disponibles
-
-```bash
-# Développement
-pnpm dev              # Serveur de développement
-pnpm build            # Build de production
-pnpm start            # Serveur de production
-pnpm lint             # Linting du code
-
-# Base de données
-pnpm prisma:generate  # Générer le client Prisma
-pnpm prisma:migrate   # Exécuter les migrations
-pnpm prisma:push      # Pousser le schéma vers la DB
-pnpm prisma:studio    # Interface d'administration DB
-```
-
 ## 🔧 Configuration
 
 ### Variables d'environnement requises
@@ -142,21 +160,7 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 - 🎨 **Animations fluides** et transitions
 - 🎨 **Composants réutilisables** et modulaires
 
-## 🚀 Déploiement
 
-### Options recommandées
-1. **Vercel** - Déploiement automatique depuis GitHub
-2. **Netlify** - Alternative avec fonctionnalités similaires
-3. **Docker** - Pour des environnements personnalisés
-4. **AWS** - Pour des besoins d'entreprise
-
-### Checklist de déploiement
-- [ ] Variables d'environnement configurées
-- [ ] Base de données migrée
-- [ ] Build réussi
-- [ ] Tests passés
-- [ ] SSL configuré
-- [ ] Monitoring activé
 
 ## 📈 Extensibilité
 
@@ -187,8 +191,6 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 4. **Pull request** avec description détaillée
 5. **Review** et merge
 
-## 📞 Support
-
 ### Ressources utiles
 - **Documentation Next.js** : https://nextjs.org/docs
 - **Documentation Prisma** : https://www.prisma.io/docs
@@ -203,6 +205,6 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
 ---
 
-**Dernière mise à jour** : Janvier 2025  
-**Version** : 1.0.0  
-**Maintenu par** : Équipe de développement 
+**Dernière mise à jour** : Juillet 2025  
+**Version** : 0.1.0  
+**Maintenu par** : Anthony Marandon

@@ -174,7 +174,7 @@ export default function DashboardHeader() {
                   <span>Accueil</span>
                 </Link>
                 <Link
-                  href="/profile"
+                  href="/dashboard/profile"
                   className="flex items-center space-x-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
                   onClick={handleMenuClose}
                 >

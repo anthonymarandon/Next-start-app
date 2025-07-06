@@ -29,18 +29,11 @@ Cette documentation couvre tous les aspects de l'application **Starter App**, un
 ### Installation
 ```bash
 # Cloner le projet
-git clone <repository-url>
-cd starter-app
+git clone https://github.com/anthonymarandon/Next-start-app.git
+cd Next-start-app
 
 # Installer les dépendances
 pnpm install
-
-# Configuration de l'environnement
-cp .env.example .env.local
-
-# Base de données
-pnpm prisma:generate
-pnpm prisma:migrate
 
 # Démarrage
 pnpm dev

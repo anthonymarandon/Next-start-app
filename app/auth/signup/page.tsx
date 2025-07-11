@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { FaHome } from 'react-icons/fa';
 
 export default function SignUp() {
   const [name, setName] = useState("");
@@ -67,9 +68,11 @@ export default function SignUp() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center px-4">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-            <span className="text-white font-bold text-2xl">S</span>
-          </div>
+          <Link href="/">
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <FaHome className="text-white text-3xl" />
+            </div>
+          </Link>
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
             Inscription
           </h2>

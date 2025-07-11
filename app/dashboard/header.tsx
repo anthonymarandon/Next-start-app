@@ -11,7 +11,7 @@ export default function DashboardHeader() {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   const handleSignOut = () => {
-    signOut({ callbackUrl: "/" });
+    signOut({ callbackUrl: "/auth/signin" });
     setUserMenuOpen(false);
     setMenuOpen(false);
   };

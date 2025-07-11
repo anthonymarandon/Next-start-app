@@ -42,11 +42,14 @@ pnpm install
 # ou npm install
 # ou yarn install
 
-# Initialiser et construire l'application
-pnpm build
+# initialiser le schéma prisma (obligatoire)
+npx prisma generate
 
 # Démarrer le serveur de développement
 pnpm dev
+
+# Construire l'application
+pnpm build
 ```
 
 ### 🚀 Démarrage rapide après installation
